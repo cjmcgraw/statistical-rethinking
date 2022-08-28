@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  
+  jupyterlab:
+    build: ./notebook_server
+    volumes:
+      - ./notebook_server:/home/jovyan/work/notebooks
+    ports:
+      - 8080:8080
