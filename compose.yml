@@ -5,6 +5,6 @@ services:
   jupyterlab:
     build: ./notebook_server
     volumes:
-      - ./notebook_server:/home/jovyan/work/notebooks
+      - ./notebook_server/notebooks:/home/jovyan/work/notebooks
     ports:
-      - 8080:8080
+      - 8888:8888
